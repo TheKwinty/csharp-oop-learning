@@ -6,59 +6,59 @@ namespace Lesson01.Hometask03.Figure
 {
     internal class Figure
     {
-        private Point point, point1, point2;
-        private Point? point3, point4;
-        public Figure(Point point, Point point1, Point point2)
+        private Point pointA, pointB, pointC;
+        private Point? pointD, pointE;
+        public Figure(Point pointA, Point pointB, Point pointC)
         {
-            this.point = point;
-            this.point1 = point1;
-            this.point2 = point2;
+            this.pointA = pointA;
+            this.pointB = pointB;
+            this.pointC = pointC;
         }
 
-        public Figure(Point point, Point point1, Point point2, Point point3)
+        public Figure(Point pointA, Point pointB, Point pointC, Point pointD)
         {
-            this.point = point;
-            this.point1 = point1;
-            this.point2 = point2;
-            this.point3 = point3;
+            this.pointA = pointA;
+            this.pointB = pointB;
+            this.pointC = pointC;
+            this.pointD = pointD;
         }
 
-        public Figure(Point point, Point point1, Point point2, Point point3, Point point4)
+        public Figure(Point pointA, Point pointB, Point pointC, Point pointD, Point pointE)
         {
-            this.point = point;
-            this.point1 = point1;
-            this.point2 = point2;
-            this.point3 = point3;
-            this.point4 = point4;
+            this.pointA = pointA;
+            this.pointB = pointB;
+            this.pointC = pointC;
+            this.pointD = pointD;
+            this.pointE = pointE;
         }
 
-        private double LengthSide(Point A, Point B)
+        private double LengthSide(Point firstPoint, Point secondPoint)
         {
-            return Math.Sqrt(Math.Pow(B.AxisValueX - A.AxisValueX ,2) + Math.Pow( B.AxisValueY - A.AxisValueY, 2));
+            return Math.Sqrt(Math.Pow(secondPoint.AxisValueX - firstPoint.AxisValueX ,2) + Math.Pow( secondPoint.AxisValueY - firstPoint.AxisValueY, 2));
         } 
 
         public void PerimeterCalculator()
         {
-            double perimeter = LengthSide(point, point1) + LengthSide(point1, point2);
-            string nameOfFigure = point.NamePoint + point1.NamePoint + point2.NamePoint; 
+            double perimeter = LengthSide(pointA, pointB) + LengthSide(pointB, pointC);
+            string nameOfFigure = pointA.NamePoint + pointB.NamePoint + pointC.NamePoint; 
 
-            Point lastPoint = point2;
+            Point lastPoint = pointC;
 
-            if (point3 != null)
+            if (pointD != null)
             {
-                perimeter += LengthSide(lastPoint, point3);
-                lastPoint = point3;
+                perimeter += LengthSide(lastPoint, pointD);
+                lastPoint = pointD;
                 nameOfFigure += lastPoint.NamePoint;
             }
 
-            if (point4 != null)
+            if (pointE != null)
             {
-                perimeter += LengthSide(lastPoint, point4);
-                lastPoint = point4;
+                perimeter += LengthSide(lastPoint, pointE);
+                lastPoint = pointE;
                 nameOfFigure += lastPoint.NamePoint;
             }
 
-            perimeter += LengthSide(lastPoint, point);
+            perimeter += LengthSide(lastPoint, pointA);
 
             Console.WriteLine($"Figure {nameOfFigure} has perimeter {perimeter}");
 
