@@ -7,11 +7,11 @@ namespace Lesson01_Classes_Objects
         static void Main(string[] args)
         {
             MyClassA variableA = new MyClassA();
-            variableA.fieldClassA = "MyClassA is working!";
+            variableA.FieldClassA = "MyClassA is working!";
             variableA.ShowFieldClassA();
 
             MyClassB variableB = new MyClassB();
-            variableB.fieldClassB = "MyClassB is working!";
+            variableB.FieldClassB = "MyClassB is working!";
             variableB.ShowFieldClassB();
 
         }

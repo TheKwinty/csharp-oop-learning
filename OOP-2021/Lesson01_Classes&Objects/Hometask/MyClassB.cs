@@ -6,11 +6,11 @@ namespace Lesson01_Classes_Objects.Hometask
 {
     internal class MyClassB
     {
-        public string fieldClassB;
+        public string FieldClassB;
 
         public void ShowFieldClassB()
         {
-            Console.WriteLine($"MyClassB's field: {fieldClassB}");
+            Console.WriteLine($"MyClassB's field: {FieldClassB}");
         }
     }
 }
