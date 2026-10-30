@@ -29,6 +29,8 @@ namespace Lesson01.Hometask02.Books
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(TitleContent);
+            Console.ResetColor();
+
         }
     }
 }

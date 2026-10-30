@@ -20,7 +20,6 @@ namespace Lesson01.Hometask02.Books
             Book book1 = new Book(bookTitle1, bookAuthor1, bookContent1);
             book1.Show();
 
-            Console.ResetColor();
             Console.WriteLine();
             Console.WriteLine(new string ('=',50));
             Console.WriteLine();
@@ -31,7 +30,6 @@ namespace Lesson01.Hometask02.Books
                 bookContent: bookContent1); //можна будувати об'єкт і так і так
 
             book2.Show();
-            Console.ResetColor();
 
         }
     }
