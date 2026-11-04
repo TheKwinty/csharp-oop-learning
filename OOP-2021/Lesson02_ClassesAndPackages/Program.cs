@@ -1,4 +1,4 @@
-﻿using Lesson02_ClassesAndPackages_MyClass1;
+﻿using OOP2021.Lesson02.MyClass1;
 
 namespace Lesson02_ClassesAndPackages
 {
@@ -9,7 +9,7 @@ namespace Lesson02_ClassesAndPackages
             MyClass1 instance = new MyClass1();
             instance.Show();
 
-            Lesson02_ClassesAndPackages_MyClass2.MyClass2 instance2 = new Lesson02_ClassesAndPackages_MyClass2.MyClass2();
+            OOP2021.Lesson02.MyClass2.MyClass2 instance2 = new OOP2021.Lesson02.MyClass2.MyClass2();
             instance2.Show();
         }
     }

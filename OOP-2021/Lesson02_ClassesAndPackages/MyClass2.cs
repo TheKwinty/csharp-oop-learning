@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lesson02_ClassesAndPackages_MyClass2
+namespace OOP2021.Lesson02.MyClass2
 {
     internal class MyClass2
     {
